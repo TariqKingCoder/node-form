@@ -1,0 +1,11 @@
+{
+  "name": "node-form",
+  "version": "1.0.0",
+  "description": "Learning node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Tariq Ahmadzai",
+  "license": "ISC"
+}
