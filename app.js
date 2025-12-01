@@ -11,7 +11,7 @@ const data = JSON.parse(fs.readFileSync('./dev-data/data.json', 'utf-8'));
 http.on('request', (req, res) => {
     const { pathname, search } = url.parse(req.url, true);
 
-    if (pathname === '/overview' || pathname === '/') {
+    if (pathname === '/') {
         let items = '';
         let body = fs.readFileSync('./templates/overview.html', 'utf-8');
         let card = fs.readFileSync('./templates/card.html', 'utf-8');
