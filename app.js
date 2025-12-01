@@ -63,7 +63,7 @@ http.on('close', () => {
 
 
 const port = process.env.PORT || 4000;
-server.listen(port, () => {
+http.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
 
