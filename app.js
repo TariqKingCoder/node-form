@@ -62,6 +62,9 @@ http.on('close', () => {
 });
 
 
-http.listen(8000, '127.0.0.1', () => {
-    console.log('server is start listening to 8000 port.');
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
+
+
